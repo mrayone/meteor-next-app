@@ -12,6 +12,10 @@ O NextJS é um framework que utiliza a lib react para desenvolvimento de aplica�
 
 O suporte a typescript é muito fluido, basta criar o arquivo tsconfig e começar a utilizadar, renomeando os arquivos para .tsx|ts.
 
+#### 1.3 Paths (root imports)
+
+Através do tsconfig é possível configurar os caminhos de atalho para a aplicação e assim deixar os imports mais curtos e enxutos.
+
 ### 2. Rotas.
 
 As rotas são bem gerenciadas no NextJS, visando a abstração e a não dependência de libs externas (Ex: react-router-dom). O next trata muito bem o esquema de rotas em sua API, basta criar a estrutura de pastas na seguinte estrutura:
