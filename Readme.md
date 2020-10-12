@@ -71,3 +71,18 @@ Sempre que for utilizada uma rota que não foi gerada estáticamente, ele vai ge
 ### 7 Dynamic & LazyLoad
 
 O next possibilita através da sua estrutura criar imports de libs/helpers de forma dinâmica, que de fato impactam no carregamento de página e precisam ser carregadas de forma preguiçosa (lazy). Também como as libs é possível utilizar o next/dynamic para carregamento de components externos que não precisam estar presentes na tela a menos que seja realizada uma determinada ação pelo usuário.
+
+### 8 Variaveis de ambiente
+
+O next ja cuida de injetar as variaveis de ambiente para nós e possui algumas particularidades que nos ajudam a controlar as chaves que ficam disponíveis, ex:
+
+- env.local => somente para ambiente local e esta contido no gitnore.
+- env.develoment => variavel compartilhada com o repositório e todo o ambiente de git.
+- env.production => variavel compartilhada com o repositório e todo o ambiente de git.
+
+#### 8.1 Particularidades de variaveis de ambiente
+
+Por padrão as variaveis de ambiente não são acessadas pelo browser, e para que possamos deixa-las públicas, o next fornece um prefixo muito interessante! Basta adicionar "NEXT_PUBLIC" antes da variável setada e
+**voila**, agora é possível acessa-la através do browser.
+
+`NEXT_PUBLIC_API_URL = https://my-api:3333/`
