@@ -26,7 +26,22 @@ Rotas dinâmicas e com parâmetros podem ser utilizadas fácilmente no NextJS. C
 
 ### 3. Styled components e contexto de renderização SSR.
 
-O next é bem flexível com relação a libs de estilo, você pode estar bem confortável em utilizar a que quiser. O mundo react vê com bom grado libs famosas como styled-components, Styled JSX, Emotion entre outras, CSS-in-JS é cada vez mais comum. Através da documentação é possível verificar como configurar e utilizar sem muito esforço estas libs famosas, a exemplo do styled-components, é necessário apenas uma configuração para que sua aplicação consiga renderizar o estilo mesmo com o javascript do navegador desabilitado.
+O next é bem flexível com relação a libs de estilo, você pode estar bem confortável em utilizar a que quiser. O mundo react vê com bom grado libs famosas como styled-components, Styled JSX, Emotion entre outras, CSS-in-JS é cada vez mais comum. Através da documentação é possível verificar como configurar e utilizar sem muito esforço estas libs, a exemplo do styled-components, é necessário apenas uma configuração para que sua aplicação consiga renderizar o estilo mesmo com o javascript do navegador desabilitado.
+
+#### 3.1 Estrutura de pastas
+
+Comumente em aplicações utilizando o borleplait do react, os estilos são mentidos juntamente com a pasta de onde foram criados ex:
+
+- Input
+  - index.tsx
+  - styles.ts
+
+No next as coisas funcionam um pouco diferente, neste caso por padrão os estilos são armazenados em uma pasta src/style e seus estilos correspondem à mesma estrutura para a criação da página, como? Simples!
+
+- Index.tsx (nossa home page).
+  - styles/pages/home.ts
+
+Deste modo, estamos dizendo ao next que ali estão conditos nossos arquivos de estilo em javascript e seu tratamento é difente, não os considerando como páginas!
 
 ### 4. Client-side fetching
 
@@ -53,4 +68,6 @@ Tempo em que o next precisa revalidar a nova versão da página. Este método de
 
 Sempre que for utilizada uma rota que não foi gerada estáticamente, ele vai gerar para nós.
 
-### 7 Dynamic Imports
+### 7 Dynamic & LazyLoad
+
+O next possibilita através da sua estrutura criar imports de libs/helpers de forma dinâmica, que de fato impactam no carregamento de página e precisam ser carregadas de forma preguiçosa (lazy). Também como as libs é possível utilizar o next/dynamic para carregamento de components externos que não precisam estar presentes na tela a menos que seja realizada uma determinada ação pelo usuário.
