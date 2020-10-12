@@ -2,7 +2,7 @@
 
 O NextJS é um framework que utiliza a lib react para desenvolvimento de aplicações web. O seu maior foco é o ambiente de produção, pois o mesmo possui uma vasta gama de configurações e ajustes in-box para facilitar a nossa vida no desenvolvimento de SPAS e tratamento de SSR (Server-side Rendering).
 
-### 1. Como estrutura de pastas e organização.
+### 1. Estrutura de pastas e organização.
 
 - SRC => Source
 - Pages - Por padrão o next sempre busca por arquivos de templates na página pages.
