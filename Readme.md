@@ -30,3 +30,7 @@ Propriedades estáticas injetadas na function components, para serem utilizadas 
 #### 6.2 Revalidate
 
 Tempo em que o next precisa revalidar a nova versão da página. Este método de data fatching performa muito bem para várias requisições simulâneas.
+
+#### 6.3 Fallback
+
+Sempre que for utilizada uma rota que não foi gerada estáticamente, ele vai gerar para nós.
