@@ -4,9 +4,9 @@ O NextJS é um framework que utiliza a lib react para desenvolvimento de aplica�
 
 ### 1. Como estrutura de pastas e organização.
 
-SRC => Source
-=> Pages - Por padrão o next sempre busca por arquivos de templates na página pages.
-Arquivos com \_(underline) => São arquivos ignorados pelo next na indexação de rotas, ou seja, as rotas são geradas de acordo com a estrutura de pastas e nomes de arquivo, explicarei melhor mais a frente.
+- SRC => Source
+- Pages - Por padrão o next sempre busca por arquivos de templates na página pages.
+- Arquivos com \_(underline) => São arquivos ignorados pelo next na indexação de rotas, ou seja, as rotas são geradas de acordo com a estrutura de pastas e nomes de arquivo, explicarei melhor mais a frente.
 
 #### 1.2 Suporte ao TypeScript.
 
