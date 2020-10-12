@@ -25,6 +25,11 @@ export default function Home({ recommendedProducts }: HomeProps) {
   //   });
   // }, []);
 
+  async function handleSum() {
+    const match = (await import("../libs/match")).default;
+    alert(match.sum(3, 5));
+  }
+
   return (
     <div>
       <section>
@@ -35,6 +40,7 @@ export default function Home({ recommendedProducts }: HomeProps) {
             <li key={product.id}>{product.title}</li>
           ))}
         </ul>
+        <button onClick={handleSum}>Sum</button>
       </section>
     </div>
   );

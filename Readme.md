@@ -10,7 +10,7 @@ O NextJS é um framework que utiliza a lib react para desenvolvimento de aplica�
 
 #### 1.2 Suporte ao TypeScript.
 
-O suporte a typescript é muito fluido, basta criar o arquivo tsconfig e começar a utilizadar, renomeando os arquivos para .tsx.
+O suporte a typescript é muito fluido, basta criar o arquivo tsconfig e começar a utilizadar, renomeando os arquivos para .tsx|ts.
 
 ### 2. Rotas.
 
@@ -25,6 +25,8 @@ As rotas são bem gerenciadas no NextJS, visando a abstração e a não dependê
 Rotas dinâmicas e com parâmetros podem ser utilizadas fácilmente no NextJS. Com apenas uma flag no arquivo .tsx|jsx é possível deixar a rota customizável. Ao criar um arquivo "[meuparam].tsx" de acordo com a estrutura de pasta desejada, ao acessar o hook router da lib next/router a propriedade já estara disponível no objeto _router.query.meuparam_. Além dos _route params_ é possível acessar também os _query params_ através deste objeto.
 
 ### 3. Styled components e contexto de renderização SSR.
+
+O next é bem flexível com relação a libs de estilo, você pode estar bem confortável em utilizar a que quiser. O mundo react vê com bom grado libs famosas como styled-components, Styled JSX, Emotion entre outras, CSS-in-JS é cada vez mais comum. Através da documentação é possível verificar como configurar e utilizar sem muito esforço estas libs famosas, a exemplo do styled-components, é necessário apenas uma configuração para que sua aplicação consiga renderizar o estilo mesmo com o javascript do navegador desabilitado.
 
 ### 4. Client-side fetching
 
@@ -50,3 +52,5 @@ Tempo em que o next precisa revalidar a nova versão da página. Este método de
 #### 6.3 Fallback
 
 Sempre que for utilizada uma rota que não foi gerada estáticamente, ele vai gerar para nós.
+
+### 7 Dynamic Imports
