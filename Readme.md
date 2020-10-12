@@ -94,3 +94,8 @@ Por padrão as variaveis de ambiente não são acessadas pelo browser, e para qu
 ### 9 - SEO
 
 O nextjs disponibiliza um component chamado HEAD para que possamos customizar como deve ser o comportamento das páginas de acordo com a indexação dos motores de busca.
+
+### 10 - Components Globais
+
+- \_document => É um component que fica por volta de todas as páginas e assim é possível realizar a maioria das configurações globais através dele, pois a sua renderização é chamada por toda pagina ou componente.
+- \_app => component que fica por volta de todas as páginas porém só é renderizado uma única vez.
